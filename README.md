@@ -1,14 +1,14 @@
-###一、概述
+###  一、概述
 我们都知道大部分后端返回给移动端的数据都是以Json数据返回的。有些时候如果我想直接显示网页上数据怎么办呢。可能我们都知道直接写`WebView`控件就可以了，但是webview显示网页的效果目前看来并不是很好，因为它要渲染，所有用户体验不好。那最好的办法就是我们把网页上的数据转化成自己的数据。下面就介绍一个神器。
 
-###二、jsoup
+### 二、jsoup
 `jsoup`是解析html的神器，因为网页的上数据也是规律的，所以`jsoup`通过的它的可以解析成`Document`对象，通过`Document`对象可以取出我们想要的数据。下面列出jsoup一些相关的地址：
 
 [jsoup官方文档](https://jsoup.org/cookbook/)
 [jsoup中文文档](http://www.open-open.com/jsoup)
 [Github地址](https://github.com/jhy/jsoup)
 
-###三、使用
+### 三、使用
 首页先在AndroidStudio引用，如图：
 ![这里写图片描述](http://img.blog.csdn.net/20171111224516277?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3l1YW41MTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 注意：使用请放在子线程上，否则会报错，对了，别忘记加上网络权限。
